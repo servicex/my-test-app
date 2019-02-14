@@ -34,7 +34,6 @@ class Movie extends Component {
                             trimRight
                             basedOn='letters'
                         />
-                        }
                     </div>
                 </div>
             </div>
