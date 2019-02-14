@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types'
-//import LinesEllipsis from 'react-lines-ellipsis'
+import LinesEllipsis from 'react-lines-ellipsis'
 import './Movie.css';
 
 
@@ -26,15 +26,14 @@ class Movie extends Component {
                             (genre, index) => <MovieGenres genre={genre} key={index} />)}
                     </div>
                     <div className='Movie__Synopsis'>
-                        {this.props.synopsis}
-                        {
-                        /* <LinesEllipsis
+                        {/*this.props.synopsis*/}
+                        <LinesEllipsis
                             text={this.props.synopsis}
                             maxLine='3'
                             ellipsis='...'
                             trimRight
                             basedOn='letters'
-                        /> */
+                        />
                         }
                     </div>
                 </div>
